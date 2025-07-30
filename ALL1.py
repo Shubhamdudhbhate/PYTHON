@@ -15,6 +15,7 @@ print(f"Slice from index 3 to end: {my_list[3:]}")
 print(f"List with step (every 2nd element): {my_list[::2]}")
 print(f"Reversed list: {my_list[::-1]}")
 
+
 # Modifying lists
 my_list[0] = 5  # Change element at index 0
 print(f"List after changing index 0: {my_list}")
@@ -34,10 +35,12 @@ print(f"Popped item: {popped_item}, List after pop(): {my_list}")
 popped_item_at_index = my_list.pop(1) # Remove and return element at index
 print(f"Popped item at index 1: {popped_item_at_index}, List after pop(1): {my_list}")
 
+
 # Other useful list methods
 list_numbers = [5, 1, 9, 2, 7]
 list_numbers.sort() # Sorts in-place (ascending by default)
 print(f"Sorted numbers list: {list_numbers}")
+
 
 list_numbers.reverse() # Reverses in-place
 print(f"Reversed sorted numbers list: {list_numbers}")
@@ -145,12 +148,15 @@ def multiply(x, y):
 product = multiply(4, 6)
 print(f"The product of 4 and 6 is: {product}")
 
+
+
 # Function with default argument values
 def welcome(name="Guest"):
     print(f"Welcome, {name}!")
 
 welcome("Charlie")
 welcome() # Uses default "Guest"
+
 
 # Function with arbitrary arguments (*args)
 def print_args(*args):
@@ -171,8 +177,11 @@ print_kwargs(city="London", population=8.9, landmark="Tower Bridge")
 # Lambda Functions (anonymous functions)
 # Definition: Small, anonymous functions defined with the `lambda` keyword.
 #             Can take any number of arguments, but can only have one expression.
+
 square = lambda x: x * x
 print(f"Square of 7 (using lambda): {square(7)}")
+
+
 
 # Using lambda with higher-order functions (e.g., map, filter)
 numbers = [1, 2, 3, 4, 5]
@@ -347,6 +356,7 @@ else:
     print("Loop finished (even if it had a pass on condition).")
 
 
+
 # 7.2. While Loop
 print("\n--- While Loop ---")
 # Definition: Repeats a block of code as long as a condition is True.
@@ -391,4 +401,6 @@ while m < 5:
     m += 1
 else:
     print("This else block will NOT execute if break is hit.")
+
+    
 print("After the while loop (with potential break).")

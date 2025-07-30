@@ -107,6 +107,10 @@ c1.Start()
 
 class Account():
 
+
+    __Account_Manager_Name="Annonymous" # Private
+
+
     def __init__(self, balance, acc):
 
         self.balance = balance
@@ -115,9 +119,6 @@ class Account():
         Account.__Manager()     #call to private unction by member function only
         print(f"New Account was created... with \nBalance:-{self.balance} \nAcc.No.:-{self.__accountNo}")
 
-
-
-    __Account_Manager_Name="Annonymous" # Private
 
 
     def __Manager():                    # Private
